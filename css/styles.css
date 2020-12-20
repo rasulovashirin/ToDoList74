@@ -1,0 +1,35 @@
+.todo__list{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.light-red{
+  color:rgba(241, 165, 165, 0.596);
+}
+.todo__container{
+  max-width: 600px;
+}
+.check-button{
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border:1px solid #ccc;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.chechbox-done:checked + .check-button{
+  background-image: url(../img/checked.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center center;
+}
+.chechbox-done:checked ~ .text-done {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+::placeholder{
+  font-style: italic;
+  color:#b1b5b9c0!important;
+  font-family: 'Arial', sans-serif;
+}
